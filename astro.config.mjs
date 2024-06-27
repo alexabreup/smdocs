@@ -6,6 +6,9 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Departamento de Hardware',
+			customCss: [
+				// Relative path to your custom CSS file
+				'./src/styles/custom.css',
 			
       logo: {
         src: './src/assets/my-logo.svg',
@@ -26,8 +29,5 @@ export default defineConfig({
 			],
 		}),
 	],
-	customCss: [
-        // Relative path to your @font-face CSS file.
-        './src/fonts/font-face.css',
-      ],
+
 });
