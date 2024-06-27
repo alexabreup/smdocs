@@ -3,12 +3,16 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+
+	site: 'https://alexabreup.github.io',
+	base: 'smdocs',
+
 	integrations: [
 		starlight({
 			title: 'Departamento de Hardware',
 			customCss: [
 				// Relative path to your custom CSS file
-				'./src/styles/custom.css',
+				'./src/styles/custom.css',],
 			
       logo: {
         src: './src/assets/my-logo.svg',
